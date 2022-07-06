@@ -25,6 +25,37 @@ video{
 #tres{
     display: none;
 }
+div{
+    width: 100%;
+    text-align: center;
+}
+
+h1{
+    padding-top: 50px;
+    position: absolute;
+    font-size: 6vw;
+    font-weight: bold;
+    background-image: linear-gradient(-90deg, #0000ff, #0f0, #00f5ff, #ff00ff, #11aee7, #ffff00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: texto 5s steps(110, end) alternate infinite;
+    white-space: nowrap;
+    border-right: 5px solid #fff;
+}
+@keyframes texto{
+    0%{
+        width: 0;
+        border-color: transparent;
+    }
+    50%{
+        border-color: #fff;
+    }
+    100%{
+        width: 100%;
+        border-color: transparent;
+    }
+}
 
 ::-webkit-scrollbar {
     width: 0px;
